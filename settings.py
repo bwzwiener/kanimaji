@@ -20,9 +20,6 @@ BRUSH_BORDER_WIDTH      = 7
 
 WAIT_AFTER = 1.5
 
-# edit here to decide what will be generated
-GENERATE_SVG           = True
-
 # sqrt, ie a stroke 4 times the length is drawn
 # at twice the speed, in twice the time.
 def stroke_length_to_duration(length):
@@ -32,11 +29,6 @@ def stroke_length_to_duration(length):
 # faster when there are many strokes.
 def time_rescale(interval):
     return math.pow(2 * interval, 2.0/3)
-
-# Possibilities are linear, ease, ease-in, ease-in-out, ease-out, see
-#   https://developer.mozilla.org/en-US/docs/Web/CSS/timing-function
-# for more info.
-TIMING_FUNCTION = "ease-in-out"
 
 #
 # colorful debug settings
