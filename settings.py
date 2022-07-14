@@ -20,18 +20,8 @@ BRUSH_BORDER_WIDTH      = 7
 
 WAIT_AFTER = 1.5
 
-# gif settings
-DELETE_TEMPORARY_FILES = False
-GIF_SIZE               = 150
-GIF_FRAME_DURATION     = 0.04
-GIF_BACKGROUND_COLOR   = '#ddf'
-# set to true to allow transparent background, much bigger file!
-GIF_ALLOW_TRANSPARENT  = False
-
 # edit here to decide what will be generated
 GENERATE_SVG           = True
-GENERATE_JS_SVG        = True
-GENERATE_GIF           = True
 
 # sqrt, ie a stroke 4 times the length is drawn
 # at twice the speed, in twice the time.
