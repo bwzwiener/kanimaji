@@ -20,9 +20,6 @@ TIMING_FUNCTION = "ease-in-out"
 
 # we will need this to deal with svg
 namespaces = {'n': "http://www.w3.org/2000/svg"}
-etree.register_namespace("kvg", "kvg")
-etree.register_namespace("d", "d")
-etree.register_namespace("style", "style")
 parser = etree.XMLParser(remove_blank_text=True)
 
 def create_animation(filename):
@@ -35,8 +32,6 @@ def create_animation(filename):
 
 	# for xlink namespace introduction
 	doc.getroot().set('{kvg}used','')
-	doc.getroot().set('{d}used','')
-	doc.getroot().set('{style}used','')
 
 	#clear all extra elements this program may have previously added
 	for g in doc.xpath("/n:svg/n:g", namespaces=namespaces):
